@@ -70,6 +70,7 @@ const Pomodoro = () => {
         updateWorkTime();
       }, 1000)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [incompleteWorkTimeAngle, incompleteBreakTimeAngle, incompleteLongBreakTimeAngle])
 
   const resetHandler = () => {

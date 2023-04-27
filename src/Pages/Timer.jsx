@@ -135,6 +135,7 @@ const Timer = () => {
   useEffect(()=>{
     if(timerStart && !timerOver && play)
       updateTime();
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formData])
 
   const resetHandler = () => {
@@ -160,10 +161,13 @@ const Timer = () => {
     switch (largestIncluded) {
       case 'days':
         str += (formData.days + ' : ')
+        /* falls through */
       case 'hours':
         str += (formData.hours + ' : ')
+        /* falls through */
       case 'mins':
         str += (formData.mins + ' : ')
+        /* falls through */
       default:
         str += (formData.secs)
     }
@@ -171,7 +175,7 @@ const Timer = () => {
       console.log(timeArray[0], '  ', str);
       timeArray.unshift(str);
     }
-    else if(timeArray.length==0)
+    else if(timeArray.length===0)
       timeArray.unshift(str);
   }
 

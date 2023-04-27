@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import {ImLoop} from 'react-icons/im'
-import { NavLink } from 'react-router-dom';
-import clockImage from '../Assets/clock.png'
 import './Clock.css'
-import styled from 'styled-components';
 
 
 const Clock = () => {
   
-  const [date, setTime] = useState(new Date);
+  const [date, setTime] = useState(new Date());
   const [digital, setDigital] = useState(false);
   const [hourAngle, setHourAngle] = useState(0);
   const [minAngle, setMinAngle] = useState(0);
