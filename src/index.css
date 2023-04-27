@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.custom-scroll::-webkit-scrollbar{
+    /* width: 94px; */
+    /* height: 4px; */
+    background-color: bisque;
+    /* white-space: nowrap;
+    min-width: 100%;
+    width: fit-content; */
+  }
+  
+.custom-scroll::-webkit-scrollbar-thumb{
+    background-color: blueviolet;
+}

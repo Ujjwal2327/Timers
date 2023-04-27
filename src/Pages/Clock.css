@@ -1,0 +1,13 @@
+.clock{
+    background-image: url('../Assets/clock.png');
+    background: linear-gradient(50% transparent);
+    background-position: center;
+    background-size: contain;
+}
+
+.clock-shadow{
+    box-shadow: 0em -1em 1em rgba(255, 255, 255, 0.06),
+                inset 0em -1em 1em rgba(255, 255, 255, 0.06),
+                0em 1em 1em rgba(0, 0, 0, 0.3),
+                inset 0em 1em 1em rgba(0, 0, 0, 0.3);
+}
